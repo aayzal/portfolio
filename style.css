@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 60px;
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
