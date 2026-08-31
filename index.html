@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Mahak | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
@@ -19,75 +20,315 @@
   </div>
 </nav>
 
+
 <!-- HERO -->
-<section class="hero text-center">
+<section id="hero" class="hero text-center">
+
   <h1>Hi, I'm Mahak 👋</h1>
+
   <p>Aspiring Full Stack Python Developer</p>
-  <a href="#projects" class="btn btn-primary m-2">View My Work</a>
-<a href="https://github.com/aayzal" target="_blank" class="btn btn-dark m-2">GitHub</a>
-<a href="https://aayzal.github.io/portfolio/" target="_blank" class="btn btn-light m-2">Portfolio</a>
+
+  <a href="#projects" class="btn btn-primary m-2">
+    View My Work
+  </a>
+
+  <a href="https://github.com/aayzal"
+     target="_blank"
+     class="btn btn-dark m-2">
+    GitHub
+  </a>
+
+  <a href="https://aayzal.github.io/portfolio/"
+     target="_blank"
+     class="btn btn-light m-2">
+    Portfolio
+  </a>
 
 </section>
+
 
 <!-- ABOUT -->
 <section class="container mt-5">
+
   <h2>About Me</h2>
+
   <p>
-    Motivated and detail-oriented aspiring Full Stack Python Developer with hands-on experience in
-    HTML, CSS, JavaScript, Python, Django, and MySQL.
+    Motivated and detail-oriented aspiring Full Stack Python Developer
+    with hands-on experience in HTML, CSS, JavaScript, Python, Django,
+    and MySQL.
   </p>
+
 </section>
+
 
 <!-- SKILLS -->
 <section class="container mt-5">
+
   <h2>Skills</h2>
+
   <div class="row">
-    <div class="col-md-3">HTML</div>
-    <div class="col-md-3">CSS</div>
-    <div class="col-md-3">JavaScript</div>
-    <div class="col-md-3">Django</div>
+
+    <div class="col-md-3">
+      HTML
+    </div>
+
+    <div class="col-md-3">
+      CSS
+    </div>
+
+    <div class="col-md-3">
+      JavaScript
+    </div>
+
+    <div class="col-md-3">
+      Django
+    </div>
+
   </div>
+
 </section>
+
 
 <!-- PROJECTS -->
 <section class="container mt-5" id="projects">
+
   <h2>Projects</h2>
 
-  <div class="row">
+  <div class="row g-4">
 
-    <!-- LuxAura -->
+
+    <!-- COFFEE SHOP -->
     <div class="col-md-6">
-      <div class="card p-3 shadow">
-        <h4>LuxAura (Django)</h4>
-        <p>E-commerce website with authentication and cart system.</p>
-        <a href="https://luxaura.onrender.com" target="_blank" class="btn btn-success">Live Demo</a>
-        <a href="https://github.com/aayzal/LuxAura" target="_blank" class="btn btn-dark">GitHub</a>
+
+      <div class="card project-card h-100 p-3 shadow">
+
+        <img
+          src="images/coffee-shop.png"
+          class="card-img-top"
+          alt="Coffee Shop Menu Website"
+        >
+
+        <div class="card-body">
+
+          <h4>Coffee Shop Menu</h4>
+
+          <p>
+            A responsive coffee shop website featuring an interactive
+            menu with image shuffling, hover effects, quantity controls,
+            coffee extras, and dynamic price calculation using JavaScript.
+          </p>
+
+          <div class="mb-3">
+
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">Bootstrap</span>
+
+          </div>
+
+          <!-- ADD REAL LINKS HERE -->
+          <a
+            href="#"
+            class="btn btn-success"
+            target="_blank">
+            Live Demo
+          </a>
+
+          <a
+            href="#"
+            class="btn btn-dark"
+            target="_blank">
+            GitHub
+          </a>
+
+        </div>
+
       </div>
+
     </div>
 
-    <!-- Store -->
+
+    <!-- LUXAURA -->
     <div class="col-md-6">
-      <div class="card p-3 shadow">
-        <h4>Sabse Sasta Store</h4>
-        <p>Static website with cart system using JavaScript.</p>
-        <a href="https://aayzal.github.io/store/" target="_blank" class="btn btn-success">Live Demo</a>
-        <a href="https://github.com/aayzal/store" target="_blank" class="btn btn-dark">GitHub</a>
+
+      <div class="card project-card h-100 p-3 shadow">
+
+        <div class="card-body">
+
+          <h4>LuxAura (Django)</h4>
+
+          <p>
+            E-commerce website built with Django featuring
+            authentication, product management, and cart functionality.
+          </p>
+
+          <div class="mb-3">
+
+            <span class="badge bg-secondary">Python</span>
+            <span class="badge bg-secondary">Django</span>
+            <span class="badge bg-secondary">MySQL</span>
+
+          </div>
+
+          <a
+            href="https://luxaura.onrender.com"
+            target="_blank"
+            class="btn btn-success">
+            Live Demo
+          </a>
+
+          <a
+            href="https://github.com/aayzal/LuxAura"
+            target="_blank"
+            class="btn btn-dark">
+            GitHub
+          </a>
+
+        </div>
+
       </div>
+
     </div>
+
+
+    <!-- LANDSCAPE -->
+    <div class="col-md-6">
+
+      <div class="card project-card h-100 p-3 shadow">
+
+        <img
+          src="images/landscape.png"
+          class="card-img-top"
+          alt="Landscape Website"
+        >
+
+        <div class="card-body">
+
+          <h4>Landscape Website</h4>
+
+          <p>
+            A responsive landscape website featuring a clean,
+            visually focused layout with smooth navigation,
+            animations, and multiple sections.
+          </p>
+
+          <div class="mb-3">
+
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">Bootstrap</span>
+
+          </div>
+
+          <!-- ADD REAL LINKS HERE -->
+          <a
+            href="#"
+            class="btn btn-success"
+            target="_blank">
+            Live Demo
+          </a>
+
+          <a
+            href="#"
+            class="btn btn-dark"
+            target="_blank">
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- STORE -->
+    <div class="col-md-6">
+
+      <div class="card project-card h-100 p-3 shadow">
+
+        <div class="card-body">
+
+          <h4>Sabse Sasta Store</h4>
+
+          <p>
+            Static e-commerce website with a responsive interface
+            and shopping cart functionality implemented using JavaScript
+            and localStorage.
+          </p>
+
+          <div class="mb-3">
+
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">Bootstrap</span>
+
+          </div>
+
+          <a
+            href="https://aayzal.github.io/store/"
+            target="_blank"
+            class="btn btn-success">
+            Live Demo
+          </a>
+
+          <a
+            href="https://github.com/aayzal/store"
+            target="_blank"
+            class="btn btn-dark">
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
 
   </div>
+
 </section>
+
 
 <!-- CONTACT -->
 <section class="container mt-5 mb-5">
+
   <h2>Contact</h2>
-  <p>Email: aayzalansari650@gmail.com</p>
-  <p>Phone: 9911913819</p>
+
+  <p>
+    Email:
+    <a href="mailto:aayzalansari650@gmail.com">
+      aayzalansari650@gmail.com
+    </a>
+  </p>
+
+  <p>
+    Phone: 9911913819
+  </p>
+
+  <p>
+    <a
+      href="https://www.linkedin.com/in/mahak-ansari-435ab6406/"
+      target="_blank">
+      LinkedIn
+    </a>
+  </p>
+
 </section>
 
+
+<!-- FOOTER -->
 <footer class="text-center p-3 bg-dark text-white">
+
   © 2026 Mahak | Portfolio
+
 </footer>
+
 
 </body>
 </html>
+```
