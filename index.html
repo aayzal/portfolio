@@ -1,309 +1,810 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mahak | Portfolio</title>
+    <title>Mahak | Full Stack Python Developer</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-dark bg-dark fixed-top">
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
     <div class="container">
-      <a class="navbar-brand" href="#hero">Mahak</a>
-    </div>
-  </nav>
 
+        <a class="navbar-brand fw-bold" href="#hero">
+            Mahak<span>.</span>
+        </a>
 
-  <!-- HERO -->
-  <section id="hero" class="hero text-center">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <h1>Hi, I'm Mahak 👋</h1>
+        <div class="collapse navbar-collapse" id="navbarNav">
 
-    <p>Aspiring Full Stack Python Developer</p>
+            <ul class="navbar-nav ms-auto align-items-lg-center">
 
-    <a href="#projects" class="btn btn-primary m-2">
-      View My Work
-    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
 
-    <a
-      href="https://github.com/aayzal"
-      target="_blank"
-      class="btn btn-dark m-2">
-      GitHub
-    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
 
-    <a
-      href="https://aayzal.github.io/portfolio/"
-      target="_blank"
-      class="btn btn-light m-2">
-      Portfolio
-    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
 
-  </section>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
 
+                <li class="nav-item ms-lg-3">
+                    <a
+                        href="https://github.com/aayzal"
+                        target="_blank"
+                        class="nav-github"
+                    >
+                        <i class="bi bi-github"></i>
+                        GitHub
+                    </a>
+                </li>
 
-  <!-- ABOUT -->
-  <section class="container mt-5">
+            </ul>
 
-    <h2>About Me</h2>
-
-    <p>
-      Motivated and detail-oriented aspiring Full Stack Python Developer
-      with hands-on experience in HTML, CSS, JavaScript, Python, Django,
-      and MySQL.
-    </p>
-
-  </section>
-
-
-  <!-- SKILLS -->
-  <section class="container mt-5">
-
-    <h2>Skills</h2>
-
-    <div class="row">
-
-      <div class="col-md-3">
-        HTML
-      </div>
-
-      <div class="col-md-3">
-        CSS
-      </div>
-
-      <div class="col-md-3">
-        JavaScript
-      </div>
-
-      <div class="col-md-3">
-        Django
-      </div>
+        </div>
 
     </div>
 
-  </section>
+</nav>
 
 
-  <!-- PROJECTS -->
-  <section class="container mt-5" id="projects">
+<!-- ================= HERO ================= -->
 
-    <h2>Projects</h2>
+<section id="hero" class="hero-section">
 
-    <div class="row g-4">
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
 
+    <div class="container">
 
-      <!-- COFFEE SHOP -->
-      <div class="col-md-6">
+        <div class="row align-items-center min-vh-100">
 
-        <div class="card project-card h-100 shadow">
+            <div class="col-lg-7">
 
-          <div class="card-body">
+                <div class="hero-badge">
+                    <span></span>
+                    Open to Work
+                </div>
 
-            <h4>Coffee Shop Menu</h4>
+                <h1>
+                    Hi, I'm <span>Mahak</span>.
+                    <br>
+                    I build things for the web.
+                </h1>
 
-            <p>
-              A responsive coffee shop website featuring an interactive
-              menu with image shuffling, hover effects, quantity controls,
-              coffee extras, and dynamic price calculation using JavaScript.
-            </p>
+                <p class="hero-subtitle">
+                    Aspiring Full Stack Python Developer focused on building
+                    responsive, interactive and user-friendly web experiences
+                    using modern frontend and Django technologies.
+                </p>
 
-            <div class="mb-3">
+                <div class="hero-buttons">
 
-              <span class="badge bg-secondary">HTML</span>
-              <span class="badge bg-secondary">CSS</span>
-              <span class="badge bg-secondary">JavaScript</span>
-              <span class="badge bg-secondary">Bootstrap</span>
+                    <a href="#projects" class="btn btn-primary-custom">
+                        View My Work
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
 
-            </div>
+                    <a
+                        href="https://github.com/aayzal"
+                        target="_blank"
+                        class="btn btn-outline-custom"
+                    >
+                        <i class="bi bi-github"></i>
+                        GitHub
+                    </a>
 
-            <a
-              href="https://github.com/aayzal/coffee-shop"
-              target="_blank"
-              class="btn btn-dark">
-              GitHub
-            </a>
+                </div>
 
-          </div>
+                <div class="hero-tech">
 
-        </div>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>Django</span>
 
-      </div>
-
-
-      <!-- LUXAURA -->
-      <div class="col-md-6">
-
-        <div class="card project-card h-100 shadow">
-
-          <div class="card-body">
-
-            <h4>LuxAura</h4>
-
-            <p>
-              E-commerce website built with Django featuring
-              authentication, product management, and cart functionality.
-            </p>
-
-            <div class="mb-3">
-
-              <span class="badge bg-secondary">Python</span>
-              <span class="badge bg-secondary">Django</span>
-              <span class="badge bg-secondary">MySQL</span>
+                </div>
 
             </div>
 
-            <a
-              href="https://luxaura.onrender.com"
-              target="_blank"
-              class="btn btn-success">
-              Live Demo
-            </a>
 
-            <a
-              href="https://github.com/aayzal/LuxAura"
-              target="_blank"
-              class="btn btn-dark">
-              GitHub
-            </a>
+            <div class="col-lg-5 d-none d-lg-block">
 
-          </div>
+                <div class="code-card">
 
-        </div>
+                    <div class="code-header">
 
-      </div>
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
 
+                        <span>portfolio.py</span>
 
-      <!-- LANDSCAPE -->
-      <div class="col-md-6">
+                    </div>
 
-        <div class="card project-card h-100 shadow">
+                    <div class="code-content">
 
-          <div class="card-body">
+                        <p>
+                            <span class="code-keyword">class</span>
+                            <span class="code-name">Developer</span>:
+                        </p>
 
-            <h4>Landscape Website</h4>
+                        <p class="indent">
+                            name =
+                            <span class="code-string">"Mahak"</span>
+                        </p>
 
-            <p>
-              A responsive landscape website featuring a clean,
-              visually focused layout with smooth navigation,
-              animations, and multiple sections.
-            </p>
+                        <p class="indent">
+                            role =
+                            <span class="code-string">
+                                "Python Developer"
+                            </span>
+                        </p>
 
-            <div class="mb-3">
+                        <p class="indent">
+                            skills = [
+                        </p>
 
-              <span class="badge bg-secondary">HTML</span>
-              <span class="badge bg-secondary">CSS</span>
-              <span class="badge bg-secondary">JavaScript</span>
-              <span class="badge bg-secondary">Bootstrap</span>
+                        <p class="double-indent">
+                            <span class="code-string">"HTML"</span>,
+                        </p>
 
-            </div>
+                        <p class="double-indent">
+                            <span class="code-string">"CSS"</span>,
+                        </p>
 
-            <a
-              href="https://github.com/aayzal/project-landscape"
-              target="_blank"
-              class="btn btn-dark">
-              GitHub
-            </a>
+                        <p class="double-indent">
+                            <span class="code-string">"JavaScript"</span>,
+                        </p>
 
-          </div>
+                        <p class="double-indent">
+                            <span class="code-string">"Python"</span>,
+                        </p>
 
-        </div>
+                        <p class="double-indent">
+                            <span class="code-string">"Django"</span>
+                        </p>
 
-      </div>
+                        <p class="indent">]</p>
 
+                        <p class="code-comment">
+                            # Always learning 🚀
+                        </p>
 
-      <!-- STORE -->
-      <div class="col-md-6">
+                    </div>
 
-        <div class="card project-card h-100 shadow">
-
-          <div class="card-body">
-
-            <h4>Sabse Sasta Store</h4>
-
-            <p>
-              Static e-commerce website with a responsive interface
-              and shopping cart functionality implemented using JavaScript
-              and localStorage.
-            </p>
-
-            <div class="mb-3">
-
-              <span class="badge bg-secondary">HTML</span>
-              <span class="badge bg-secondary">CSS</span>
-              <span class="badge bg-secondary">JavaScript</span>
-              <span class="badge bg-secondary">Bootstrap</span>
+                </div>
 
             </div>
 
-            <a
-              href="https://aayzal.github.io/store/"
-              target="_blank"
-              class="btn btn-success">
-              Live Demo
-            </a>
-
-            <a
-              href="https://github.com/aayzal/store"
-              target="_blank"
-              class="btn btn-dark">
-              GitHub
-            </a>
-
-          </div>
-
         </div>
-
-      </div>
-
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- CONTACT -->
-  <section class="container mt-5 mb-5">
+<!-- ================= ABOUT ================= -->
 
-    <h2>Contact</h2>
+<section id="about" class="section">
 
-    <p>
-      Email:
-      <a href="mailto:aayzalansari650@gmail.com">
-        aayzalansari650@gmail.com
-      </a>
-    </p>
+    <div class="container">
 
-    <p>
-      Phone: 9911913819
-    </p>
+        <div class="section-heading">
 
-    <p>
-      <a
-        href="https://www.linkedin.com/in/mahak-ansari-435ab6406/"
-        target="_blank">
-        LinkedIn
-      </a>
-    </p>
+            <span>01 / ABOUT</span>
 
-  </section>
+            <h2>A little about me</h2>
+
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+
+                <p class="about-text">
+                    I'm an aspiring Full Stack Python Developer who enjoys
+                    turning ideas into functional and visually appealing
+                    websites.
+                </p>
+
+                <p class="about-text">
+                    I have hands-on experience working with HTML, CSS,
+                    JavaScript, Bootstrap, Python, Django and MySQL through
+                    personal projects and practical development.
+                </p>
+
+                <p class="about-text">
+                    I'm currently focused on improving my development skills,
+                    building stronger projects and looking for opportunities
+                    where I can continue learning while contributing to real
+                    projects.
+                </p>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="about-box">
+
+                    <div class="about-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+
+                    <h4>Building. Learning. Improving.</h4>
+
+                    <p>
+                        I believe the best way to learn development is by
+                        actually building things.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
-  <!-- FOOTER -->
-  <footer class="text-center p-3 bg-dark text-white">
+<!-- ================= SKILLS ================= -->
 
-    © 2026 Mahak | Portfolio
+<section id="skills" class="section skills-section">
 
-  </footer>
+    <div class="container">
 
+        <div class="section-heading">
+
+            <span>02 / SKILLS</span>
+
+            <h2>Technologies I work with</h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-window"></i>
+
+                    <h4>Frontend</h4>
+
+                    <p>
+                        HTML, CSS, JavaScript and Bootstrap for responsive
+                        interfaces.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-filetype-py"></i>
+
+                    <h4>Backend</h4>
+
+                    <p>
+                        Python and Django for building web applications and
+                        backend functionality.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-database"></i>
+
+                    <h4>Database</h4>
+
+                    <p>
+                        Working knowledge of relational databases and
+                        application data.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-git"></i>
+
+                    <h4>Tools</h4>
+
+                    <p>
+                        Using Git and GitHub to manage and showcase
+                        development projects.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>03 / PROJECTS</span>
+
+            <h2>Things I've built</h2>
+
+            <p>
+                A selection of projects I've worked on while learning and
+                practicing web development.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- COFFEE SHOP -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-icon coffee-icon">
+                        <i class="bi bi-cup-hot"></i>
+                    </div>
+
+                    <h3>Coffee Shop Menu</h3>
+
+                    <p>
+                        A responsive coffee shop website featuring an
+                        interactive menu, image shuffling, hover effects,
+                        quantity controls, coffee extras and dynamic price
+                        calculation using JavaScript.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/aayzal/coffee-shop"
+                            target="_blank"
+                        >
+                            <i class="bi bi-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LUXAURA -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-icon perfume-icon">
+                        <i class="bi bi-stars"></i>
+                    </div>
+
+                    <h3>LuxAura</h3>
+
+                    <p>
+                        A Django-based perfume e-commerce website featuring
+                        authentication, product management, database
+                        integration and shopping functionality.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>MySQL</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://luxaura.onrender.com"
+                            target="_blank"
+                        >
+                            <i class="bi bi-box-arrow-up-right"></i>
+                            Live Demo
+                        </a>
+
+                        <a
+                            href="https://github.com/aayzal/LuxAura"
+                            target="_blank"
+                        >
+                            <i class="bi bi-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LANDSCAPE -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-icon landscape-icon">
+                        <i class="bi bi-tree"></i>
+                    </div>
+
+                    <h3>Landscape Website</h3>
+
+                    <p>
+                        A responsive landscape website with a clean,
+                        visually-focused layout, smooth navigation,
+                        animations and multiple sections.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/aayzal/project-landscape"
+                            target="_blank"
+                        >
+                            <i class="bi bi-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- STORE -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+                    <div class="project-icon store-icon">
+                        <i class="bi bi-bag"></i>
+                    </div>
+
+                    <h3>Sabse Sasta Store</h3>
+
+                    <p>
+                        A static e-commerce website with a responsive
+                        interface and shopping cart functionality using
+                        JavaScript and localStorage.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://aayzal.github.io/store/"
+                            target="_blank"
+                        >
+                            <i class="bi bi-box-arrow-up-right"></i>
+                            Live Demo
+                        </a>
+
+                        <a
+                            href="https://github.com/aayzal/store"
+                            target="_blank"
+                        >
+                            <i class="bi bi-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GITHUB CTA ================= -->
+
+<section class="github-section">
+
+    <div class="container">
+
+        <div class="github-box">
+
+            <i class="bi bi-github github-big-icon"></i>
+
+            <div>
+
+                <span>More on GitHub</span>
+
+                <h3>Explore my other projects</h3>
+
+            </div>
+
+            <a
+                href="https://github.com/aayzal"
+                target="_blank"
+                class="btn btn-light"
+            >
+                Visit GitHub
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span>04 / CONTACT</span>
+
+            <h2>Let's connect</h2>
+
+            <p>
+                I'm currently open to entry-level opportunities, internships
+                and projects where I can learn and contribute.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <a
+                href="mailto:aayzalansari650@gmail.com"
+                class="contact-card"
+            >
+
+                <i class="bi bi-envelope"></i>
+
+                <div>
+                    <small>Email</small>
+                    <strong>aayzalansari650@gmail.com</strong>
+                </div>
+
+            </a>
+
+
+            <a
+                href="tel:+919911913819"
+                class="contact-card"
+            >
+
+                <i class="bi bi-telephone"></i>
+
+                <div>
+                    <small>Phone</small>
+                    <strong>+91 99119 13819</strong>
+                </div>
+
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/mahak-ansari-435ab6406/"
+                target="_blank"
+                class="contact-card"
+            >
+
+                <i class="bi bi-linkedin"></i>
+
+                <div>
+                    <small>LinkedIn</small>
+                    <strong>Connect with me</strong>
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+                <strong>Mahak<span>.</span></strong>
+                <p>Building my skills, one project at a time.</p>
+            </div>
+
+            <div class="footer-links">
+
+                <a
+                    href="https://github.com/aayzal"
+                    target="_blank"
+                >
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/mahak-ansari-435ab6406/"
+                    target="_blank"
+                >
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="mailto:aayzalansari650@gmail.com">
+                    <i class="bi bi-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Mahak. Built with HTML, CSS & Bootstrap.
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
 
 </body>
 </html>
